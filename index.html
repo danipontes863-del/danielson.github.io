@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Dycutsz (Marcações)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #111, #333);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1599351431204-1f7d3f8e4f7e') center/cover no-repeat;
+      text-align: center;
+      padding: 60px 20px;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    form {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #e63946;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background: #ff4d5a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+    th {
+      background-color: #e63946;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(255,255,255,0.05);
+    }
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dycutsz (Marcações)</h1>
+    <p>Estilo e confiança no seu corte!</p>
+  </header>
+
+  <section>
+    <h2>Agende a sua marcação</h2>
+    <form>
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="local">Local:</label>
+      <select id="local" name="local" required>
+        <option value="">Selecione...</option>
+        <option value="Lisboa">Na casa do barbeiro</option>
+        <option value="Porto">Na casa do cliente( 3€ de acrescimo ) </option>
+      </select>
+      
+       <label for="local">Barbeiro</label>
+      <select id="local" name="local" required>
+        <option value="">Selecione...</option>
+        <option value="Lisboa">Dycutsz(Danielson)</option>
+      </select>
+
+      <label for="corte">Corte desejado:</label>
+      <select id="corte" name="corte" required>
+        <option value="">Selecione...</option>
+        <option value="Taper Fade">Taper Fade - 7€</option>
+        <option value="Low Taper">Low Taper - 7€</option>
+        <option value="High Taper">High Taper - 10€</option>
+        <option value="Moicano">Moicano - 7€</option>
+        <option value="Corte em V">Corte em V - 10€</option>
+        <option value="High Fade">High Fade - 10€</option>
+        <option value="Low Fade">Low Fade - 10€</option>
+        <option value="Low Fade">Alinhamento - 3€</option>
+      </select>
+
+      <button type="submit">Confirmar Marcação</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Tabela de Preços</h2>
+    <table>
+      <tr>
+        <th>Corte</th>
+        <th>Preço (€)</th>
+      </tr>
+      <tr><td>Taper Fade</td><td>7</td></tr>
+      <tr><td>Low Taper</td><td>7</td></tr>
+      <tr><td>High Taper</td><td>10</td></tr>
+      <tr><td>Moicano</td><td>7</td></tr>
+      <tr><td>Corte em V</td><td>10</td></tr>
+      <tr><td>High Fade</td><td>10</td></tr>
+      <tr><td>Low Fade</td><td>10</td></tr>~
+      <tr><td>Alinhamento</td><td>3</td></tr>
+      
+    </table>
+  </section>
+
+  <section>
+    <h2>Exemplos de cortes </h2>
+    <div class="gallery">
+      <img src="https://blog.sobrebarba.com.br/wp-content/uploads/2024/03/image.webp"alt="Taper Fade">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn3QQqJgHA9wGg3x1rH_6UNwvK2-I8sjUM1g&s" alt="Low Taper">
+      <img src="https://cdn.shopify.com/s/files/1/0029/0868/4397/files/Short-High-Taper-Fade_600x600.webp?v=1752487055" alt="High Taper">
+      <img src="https://i.pinimg.com/736x/e6/24/72/e62472be9161df7d03acd999901ea48a.jpg" alt="Moicano">
+      <img src="https://i.pinimg.com/736x/53/64/68/536468b6879d8c15650b09fb62f2f267.jpg" alt="Corte em V">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcfwKDCCyZ2RyXG3MG4ZGFeGnXE8UeslQZXQ&s" alt="High Fade">
+      <img src="https://www.menshairstylestoday.com/wp-content/uploads/2023/07/Low-Fade-with-Short-Hair-and-Beard.jpg.webp" alt="Low Fade">
